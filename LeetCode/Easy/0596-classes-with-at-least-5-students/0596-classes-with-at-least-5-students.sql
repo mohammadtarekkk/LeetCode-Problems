@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
-SELECT class
-FROM (SELECT class, count(class) AS C
-      FROM Courses 
-      GROUP BY class) AS T
-WHERE T.C >= 5
+select class
+from (select class, count(class) as C
+      from Courses 
+      group by class) as T
+where T.C >= 5
